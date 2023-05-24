@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\HW\1111_視窗程式\BookBorrowingSystem\DataGridViewNumericUpDownElements\bin\Debug\DataGridViewNumericUpDownElements.dll
+C:\Users\user\Desktop\HW\1111_視窗程式\BookBorrowingSystem\DataGridViewNumericUpDownElements\bin\Debug\DataGridViewNumericUpDownElements.pdb
+C:\Users\user\Desktop\HW\1111_視窗程式\BookBorrowingSystem\DataGridViewNumericUpDownElements\obj\Debug\DataGridViewNumericUpDownElements.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\HW\1111_視窗程式\BookBorrowingSystem\DataGridViewNumericUpDownElements\obj\Debug\DataGridViewNumericUpDownElements.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\HW\1111_視窗程式\BookBorrowingSystem\DataGridViewNumericUpDownElements\obj\Debug\DataGridViewNumericUpDownElements.dll
+C:\Users\user\Desktop\HW\1111_視窗程式\BookBorrowingSystem\DataGridViewNumericUpDownElements\obj\Debug\DataGridViewNumericUpDownElements.pdb

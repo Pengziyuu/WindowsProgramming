@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37F35A59-8D03-4B2C-BD3F-C14195864182}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HW</RootNamespace>
+    <AssemblyName>HW</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumExtras.PageObjects, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.PageObjects.3.11.0\lib\net45\SeleniumExtras.PageObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\BackPackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BackPackForm.designer.cs">
+      <DependentUpon>BackPackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BookAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BookAddingForm.designer.cs">
+      <DependentUpon>BookAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BookBorrowingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BookBorrowingForm.designer.cs">
+      <DependentUpon>BookBorrowingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BookInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BookInventoryForm.designer.cs">
+      <DependentUpon>BookInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BookManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\BookManagementForm.Designer.cs">
+      <DependentUpon>BookManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MenuForm.designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\BookCategory.cs" />
+    <Compile Include="Model\BookItem.cs" />
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="PresentationModel\BackPackPresentationModel.cs" />
+    <Compile Include="PresentationModel\BookAddingPresentationModel.cs" />
+    <Compile Include="PresentationModel\BookBorrowingPresentationModel.cs" />
+    <Compile Include="PresentationModel\BookInventoryPresentationModel.cs" />
+    <Compile Include="PresentationModel\BookManagementPresentationModel.cs" />
+    <Compile Include="PresentationModel\MenuPresentationModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BookItem.datasource" />
+    <None Include="Properties\DataSources\HomeWork.BookItem.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\BackPackForm.resx">
+      <DependentUpon>BackPackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BookAddingForm.resx">
+      <DependentUpon>BookAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BookBorrowingForm.resx">
+      <DependentUpon>BookBorrowingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BookInventoryForm.resx">
+      <DependentUpon>BookInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\BookManagementForm.resx">
+      <DependentUpon>BookManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataGridViewNumericUpDownElements\DataGridViewNumericUpDownElements.csproj">
+      <Project>{82b50731-be90-433f-bb6e-9b509c5f3b7c}</Project>
+      <Name>DataGridViewNumericUpDownElements</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>start/elevate/d"C:\Program Files (x86)\Windows Application Driver\" WinAppDriver.exe</PreBuildEvent>
+  </PropertyGroup>
+</Project>
